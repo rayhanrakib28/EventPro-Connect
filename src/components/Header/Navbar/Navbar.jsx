@@ -114,7 +114,10 @@ const Navbar = () => {
                         </label>
                         <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content text-center font-bold bg-base-100 rounded-box w-48">
                             {
-                                <li className='pb-2'>{user?.displayName}</li>
+                                user && <span className='pb-4'>{user?.displayName}</span>
+                            }
+                            {
+                                user && <span className='pb-2'>{user?.phoneNumber}</span>
                             }
                             {
                                 user && <button onClick={handleLogOut}>Sign Out</button>
