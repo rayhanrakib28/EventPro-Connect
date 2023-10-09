@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "Leadership Excellence Seminar",
+    "image": "https://i.ibb.co/cYZ06mW/1c.jpg",
+    "cover": "https://i.ibb.co/DDVc2Yn/1.jpg",
+    "description": "Invest in your leadership skills at the Leadership Excellence Seminar. Enhance your personal growth, leadership style, and decision-making abilities. Engage in interactive seminars, workshops, and leadership challenges. Elevate your leadership journey and make a lasting impact on your organization.",
+    "price": "$699",
+    "details": "4-day seminar with leadership workshops",
+    "where": "Leadership Institute, Leadership City",
+    "when": "February 20-23, 2024"
+  },
+  {
+    "id": 2,
+    "name": "Product Showcase 2023",
+    "image": "https://i.ibb.co/p368Ykv/2c.jpg",
+    "cover": "https://i.ibb.co/cvbfc7Z/2.jpg",
+    "description": "Be among the first to witness the latest product innovations at Product Showcase 2023. Discover new releases, experience live demos, and interact with product developers. Stay ahead of the competition.",
+    "price": "$299",
+    "details": "1-day event featuring product unveilings",
+    "where": "Grand Exhibition Center, Cityville",
+    "when": "April 12, 2023"
+  },
+  {
+    "id": 3,
+    "name": "Innovation Leaders Conference",
+    "image": "https://i.ibb.co/W0wHKd2/3c.jpg",
+    "cover": "https://i.ibb.co/sHyF6FN/3.jpg",
+    "description": "The Innovation Leaders Conference is where innovators converge. Gain insights into disruptive technologies, open innovation, and fostering a culture of creativity. Connect with leading innovators, attend breakout sessions, and leave with actionable strategies to drive innovation in your organization. Stay ahead in the innovation game.",
+    "price": "$799",
+    "details": "2-day conference innovation workshops",
+    "where": "Innovation Center, Innovator's Haven",
+    "when": "March 15-16, 2024"
+  },
+  {
+    "id": 4,
+    "name": "Global Strategy Summit",
+    "image": "https://i.ibb.co/chr5p1F/4c.jpg",
+    "cover": "https://i.ibb.co/7k1zdZZ/4.jpg",
+    "description": "The Global Strategy Summit is a high-level corporate meeting for global business leaders. Discuss market strategies, international expansion, and global challenges. Strengthen global business connections.",
+    "price": "$899",
+    "details": "2-day executive meeting",
+    "where": "International Business Center, Metropolis",
+    "when": "June 19-20, 2023"
+  },
+  {
+    "id": 5,
+    "name": "Excellence Awards Gala",
+    "image": "https://i.ibb.co/qgMvc6K/5c.jpg",
+    "cover": "https://i.ibb.co/tpJs3mg/5.jpg",
+    "description": "Join us at the Excellence Awards Gala to honor outstanding achievements in the corporate world. Celebrate excellence in leadership, innovation, and corporate social responsibility. An elegant evening awaits.",
+    "price": "$149 per ticket",
+    "details": "Black-tie awards ceremony and dinner",
+    "where": "Grand Ballroom, Luxury Hotel, Cityville",
+    "when": "September 30, 2023"
+  },
+  {
+    "id": 6,
+    "name": "Digital Marketing Summit",
+    "image": "https://i.ibb.co/3SpBJYk/6c.jpg",
+    "cover": "https://i.ibb.co/1XHGcCB/6.jpg",
+    "description": "Join the Digital Marketing Summit to explore the latest trends and strategies in the world of digital marketing. Learn from leading experts, gain insights into SEO, social media, and content marketing, and elevate your online presence.",
+    "price": "$499",
+    "details": "2-day summit with hands-on workshops",
+    "where": "Digital Hub, Webville",
+    "when": "August 10-11, 2023"
+  },
+  {
+    "id": 7,
+    "name": "Annual Shareholders Meeting",
+    "image": "https://i.ibb.co/QQT4LWV/7c.jpg",
+    "cover": "https://i.ibb.co/L5zv376/7.jpg",
+    "description": "The Annual Shareholders Meeting is a key corporate gathering for investors and stakeholders. Review financial performance, company updates, and future strategies. Engage with company leadership.",
+    "price": "By invitation only",
+    "details": "1-day meeting with financial presentations",
+    "where": "Corporate Headquarters, Financial District",
+    "when": "May 5, 2023"
+  },
+  {
+    "id": 8,
+    "name": "Financial Strategies Seminar",
+    "image": "https://i.ibb.co/VvtTnng/8c.jpg",
+    "cover": "https://i.ibb.co/D80Qhtg/8.jpg",
+    "description": "The Financial Strategies Seminar is a deep dive into corporate finance. Learn advanced financial planning, risk management, and investment strategies from industry experts. Gain the knowledge to optimize your company's financial health.",
+    "price": "$349",
+    "details": "2-day seminar with financial case studies",
+    "where": "Metropolitan Conference Center, Finance District",
+    "when": "May 18-19, 2023"
+  },
+  {
+    "id": 9,
+    "name": "Leadership Dev. Retreat",
+    "image": "https://i.ibb.co/q1VzYQL/9c.jpg",
+    "cover": "https://i.ibb.co/2ymjpL0/9.jpg",
+    "description": "Invest in leadership excellence at the Leadership Development Retreat. Engage in leadership training, personal growth, and team-building activities. Build the skills and mindset of an effective leader.",
+    "price": "$599",
+    "details": "3-day retreat with leadership workshops",
+    "where": "Leadership Lodge, Serene Forest",
+    "when": "October 15-17, 2023"
+  }
+]
