@@ -16,9 +16,9 @@ const Bookmarked = () => {
     },[])
 
     return (
-        <div className='py-10'>
+        <div>
             {
-                noData ? <ErrorPage /> :
+                noData ? (<div className='bg-black h-[90vh] flex items-center justify-center p-10'><h1 className='w-1/2 text-3xl text-white text-center font-medium'>{noData}</h1></div> ) :
                     (
                         <div>
                             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 justify-items-center px-6 lg:px-0'>
