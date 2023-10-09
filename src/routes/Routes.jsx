@@ -4,10 +4,11 @@ import Layout from '../utils/Layout';
 import ErrorPage from '../pages/404/ErrorPage';
 import Home from './../pages/Home/Home';
 import Bookmarked from './../pages/Bookmarked/Bookmarked';
-import ScheduleDemo from './../pages/ScheduleDemo/ScheduleDemo';
 import Login from './../pages/Login/Login';
 import Register from './../pages/Register/Register';
 import Service from '../components/Services/Service';
+import PrivateRoutes from './PrivateRoutes';
+import Profile from '../pages/Profile/Profile';
 
 const Routes = createBrowserRouter([
     {
@@ -21,11 +22,11 @@ const Routes = createBrowserRouter([
             },
             {
                 path: "/bookmarked",
-                element: <Bookmarked></Bookmarked>
+                element: <PrivateRoutes><Bookmarked></Bookmarked></PrivateRoutes>
             },
             {
-                path: "/schedules",
-                element: <ScheduleDemo></ScheduleDemo>
+                path: "/profile",
+                element: <PrivateRoutes><Profile></Profile></PrivateRoutes>
             },
             {
                 path: "/login",
@@ -37,7 +38,7 @@ const Routes = createBrowserRouter([
             },
             {
                 path: "/details/:id",
-                element: <Service></Service>
+                element: <PrivateRoutes><Service></Service></PrivateRoutes>
             }
         ]
     }

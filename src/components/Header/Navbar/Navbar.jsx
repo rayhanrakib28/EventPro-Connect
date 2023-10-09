@@ -1,7 +1,27 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { NavLink } from 'react-router-dom';
+import { AuthContext } from '../../../custom/AuthProvider';
+import toast from 'react-hot-toast';
 
 const Navbar = () => {
+
+    const { user, logOut } = useContext(AuthContext);
+
+    const handleLogOut = () => {
+        logOut().then((result) => {
+            toast.success('Sign Out Successfully.', {
+                style: {
+                    border: '1px solid #713200',
+                    padding: '16px',
+                    color: '#713200',
+                },
+                iconTheme: {
+                    primary: '#713200',
+                    secondary: '#FFFAEE',
+                },
+            });
+        })
+    }
     const navlinks = <>
         <li>
             <NavLink
@@ -14,28 +34,34 @@ const Navbar = () => {
             </NavLink>
 
         </li>
-        <li>
-            <NavLink
-                to="/bookmarked"
-                className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "text-transparent bg-clip-text bg-gradient-to-r from-[#d050d6] to-[#3e87f5] font-bold" : ""
-                }
-            >
-                Bookmarked
-            </NavLink>
+        {
+            user &&
+            <li>
+                <NavLink
+                    to="/bookmarked"
+                    className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "text-transparent bg-clip-text bg-gradient-to-r from-[#d050d6] to-[#3e87f5] font-bold" : ""
+                    }
+                >
+                    Bookmarked
+                </NavLink>
 
-        </li>
-        <li>
-            <NavLink
-                to="/schedules"
-                className={({ isActive, isPending }) =>
-                    isPending ? "pending" : isActive ? "text-transparent bg-clip-text bg-gradient-to-r from-[#d050d6] to-[#3e87f5] font-bold" : ""
-                }
-            >
-                ScheduleDemo
-            </NavLink>
+            </li>
+        }
+        {
+            user &&
+            <li>
+                <NavLink
+                    to="/profile"
+                    className={({ isActive, isPending }) =>
+                        isPending ? "pending" : isActive ? "text-transparent bg-clip-text bg-gradient-to-r from-[#d050d6] to-[#3e87f5] font-bold" : ""
+                    }
+                >
+                    Profile
+                </NavLink>
 
-        </li>
+            </li>
+        }
         <li>
             <NavLink
                 to="/register"
@@ -83,12 +109,16 @@ const Navbar = () => {
                     <div className="dropdown dropdown-end">
                         <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
                             <div className="w-10 rounded-full">
-                                <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                                <img className='text-white text-xs' src={user?.photoURL} alt='Photo' />
                             </div>
                         </label>
                         <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content text-center font-bold bg-base-100 rounded-box w-48">
-                            <li className='pb-2'>Username</li>
-                            <NavLink>Log Out</NavLink>
+                            {
+                                <li className='pb-2'>{user?.displayName}</li>
+                            }
+                            {
+                                user && <button onClick={handleLogOut}>Sign Out</button>
+                            }
                         </ul>
                     </div>
                 </div>
