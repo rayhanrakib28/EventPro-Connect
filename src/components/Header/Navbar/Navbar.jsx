@@ -117,10 +117,10 @@ const Navbar = () => {
                                 user && <span className='pb-4'>{user?.displayName}</span>
                             }
                             {
-                                user && <span className='pb-2'>{user?.phoneNumber}</span>
+                                user && <button onClick={handleLogOut}>Sign Out</button>
                             }
                             {
-                                user && <button onClick={handleLogOut}>Sign Out</button>
+                                !user && <button><a href="/login">Sign In</a></button>
                             }
                         </ul>
                     </div>

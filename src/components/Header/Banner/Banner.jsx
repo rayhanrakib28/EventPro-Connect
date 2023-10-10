@@ -27,7 +27,7 @@ const Banner = () => {
                     />
                         <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold my-2 lg:my-5 text-white">Elevate Your <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#da35a3] to-[#045bdd]">Corporate Events</span></h1>
                         <p className="text-base lg:text-xl text-gray-200 py-2 ">Discover Seamless Event Planning, Unforgettable Experiences, and Success-Driven Solutions with Our Corporate Event Management Platform. Your Vision, Our Expertise.</p>
-                        <button data-aos="fade-right" data-aos-duration="3000" className="btn mt-5 lg:mt-10 px-5 lg:px-8 font-bold hover:text-white border-0 hover:bg-gradient-to-r from-[#da35a3] to-[#045bdd]">Sign Up Now</button>
+                        <button data-aos="fade-right" data-aos-duration="3000" className="btn mt-5 lg:mt-10 px-5 lg:px-8 font-bold hover:text-white border-0 hover:bg-gradient-to-r from-[#da35a3] to-[#045bdd]"><a href="/register">Sign Up Now</a></button>
                 </div>
             </div>
         </div>

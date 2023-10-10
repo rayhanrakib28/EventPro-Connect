@@ -8,14 +8,14 @@ const Profile = () => {
     const { handleUpdateProfile } = useContext(AuthContext);
     const [displayName, setDisplayName] = useState("");
     const [photoURL, setphotoURL] = useState("");
-    const [phoneNumber, setPhoneNumber] = useState("");
 
     const handleUpdate = e => {
         e.preventDefault();
-        handleUpdateProfile(displayName, photoURL, phoneNumber)
+        handleUpdateProfile(displayName, photoURL)
             .then(() => {
                 toast.success("Profile Information Updated");
                 navigate('/')
+                location.reload();
         })
     }
 
@@ -33,17 +33,6 @@ const Profile = () => {
                             name=""
                             id=""
                             placeholder="Your Name"
-                        />
-                    </div>
-                    <div className="border-2 py-2 px-3 rounded-2xl mb-4">
-                        <input
-                            required
-                            onChange={(e) => setPhoneNumber(e.target.value)}
-                            className="form-control w-full pl-2 outline-none border-none"
-                            type="text"
-                            name=""
-                            id=""
-                            placeholder="Phone Number"
                         />
                     </div>
                     <div className="border-2 py-2 px-3 rounded-2xl mb-4">
