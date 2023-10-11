@@ -11,7 +11,7 @@ const Register = () => {
         e.preventDefault();
         googleSignIn().then((result) => {
             navigate(location?.state ? location.state : '/')
-            toast.success("Successfully Logged In")
+            toast.success("Successfully Done")
         })
     }
 
