@@ -10,8 +10,8 @@ const Register = () => {
     const handleGoogle = e => {
         e.preventDefault();
         googleSignIn().then((result) => {
-            console.log(result.user);
             navigate(location?.state ? location.state : '/')
+            toast.success("Successfully Logged In")
         })
     }
 
@@ -28,8 +28,8 @@ const Register = () => {
         } else {
             setError("");
             signUp(email, password).then((result) => {
-                toast.success("Successfully Registered")
                 navigate(location?.state ? location.state : '/')
+                toast.success("Successfully Registered")
             })
         }
     };
